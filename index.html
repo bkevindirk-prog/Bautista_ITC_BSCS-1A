@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project Faker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#home" class="brand" aria-label="Project Faker home">
+      <span class="brand-text">
+        <span class="brand-title">Project Faker</span>
+      </span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" data-nav="home">Home</a></li>
+      <li><a href="#projects" data-nav="projects">Projects</a></li>
+      <li><a href="#about" data-nav="about">About</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <div class="view" id="view-home">
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-inner">
+          <span class="eyebrow">Free Online Tools</span>
+          <h1>Welcome to <em>Summoners Web</em></h1>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-gold">
+              Explore Projects
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+            </a>
+            <a href="#income-tax" class="btn btn-light">Try the Tax Calculator</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Portfolio</span>
+          <h2>Projects</h2>
+          <p>Open any project to use the tool and see how it works.</p>
+        </div>
+        <div class="grid" id="projectGrid"></div>
+      </div>
+    </section>
+
+    <section class="block about" id="about">
+      <div class="container">
+        <div class="about-card reveal">
+          <div>
+            <h2>About This Website</h2>
+            <p>This website is a portfolio of small programming projects turned into tools anyone can use. Each project solves a practical problem — converting units, estimating income tax, working with numbers, or computing pay.</p>
+            <p>Everything runs in your browser. Nothing you type is sent or stored anywhere.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="view" id="view-project"></div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <h4>Project Faker</h4>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#conversion">Conversion</a></li>
+        <li><a href="#income-tax">Income Tax</a></li>
+        <li><a href="#loops">Number Tools</a></li>
+        <li><a href="#payroll">Payroll</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Project Faker. All rights reserved.</span>
+      <span>Results are estimates for general use.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
